@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS;..\STM32F4xx_StdPeriph_Driver\inc;..\USER\INC</IncludePath>
+              <IncludePath>..\CMSIS;..\STM32F4xx_StdPeriph_Driver\inc;..\USER\INC;..\VL53L0X\platform\inc;..\VL53L0X\core\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -437,6 +437,11 @@
               <FileType>1</FileType>
               <FilePath>..\USER\SRC\pyy.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_vl53l0x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\SRC\bsp_vl53l0x.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -476,6 +481,51 @@
               <FileName>stm32f4xx_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>VL53L0X</GroupName>
+          <Files>
+            <File>
+              <FileName>vl53l0x_i2c_win_serial_comms.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_i2c_win_serial_comms.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_IIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_IIC.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_platform.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\platform\src\vl53l0x_platform.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_calibration.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_calibration.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_ranging.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_ranging.c</FilePath>
+            </File>
+            <File>
+              <FileName>vl53l0x_api_strings.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\VL53L0X\core\src\vl53l0x_api_strings.c</FilePath>
             </File>
           </Files>
         </Group>

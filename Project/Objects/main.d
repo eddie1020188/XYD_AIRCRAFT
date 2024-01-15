@@ -43,3 +43,15 @@
 .\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: ..\USER\INC\systick.h
 .\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: ..\USER\INC\bsp_vl53l0x.h
+.\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_IIC.h
+.\objects\main.o: ..\VL53L0X\core\inc\vl53l0x_def.h
+.\objects\main.o: ..\VL53L0X\core\inc\vl53l0x_device.h
+.\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_types.h
+.\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: ..\VL53L0X\core\inc\vl53l0x_api.h
+.\objects\main.o: ..\VL53L0X\core\inc\vl53l0x_api_strings.h
+.\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_platform.h
+.\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_platform_log.h
+.\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_i2c_platform.h
+.\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
