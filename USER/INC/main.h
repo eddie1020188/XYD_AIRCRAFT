@@ -9,5 +9,7 @@
 #include "string.h"
 #include "stdio.h"
 #include "bsp_vl53l0x.h"
-
+#include "usart.h"
+#include "wifi.h"
+#include "key.h"
 #endif

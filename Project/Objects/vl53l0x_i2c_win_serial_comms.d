@@ -45,5 +45,6 @@
 .\objects\vl53l0x_i2c_win_serial_comms.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\vl53l0x_i2c_win_serial_comms.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\vl53l0x_i2c_win_serial_comms.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
+.\objects\vl53l0x_i2c_win_serial_comms.o: ..\USER\INC\sys.h
 .\objects\vl53l0x_i2c_win_serial_comms.o: ..\VL53L0X\platform\inc\vl53l0x_platform_log.h
 .\objects\vl53l0x_i2c_win_serial_comms.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\string.h

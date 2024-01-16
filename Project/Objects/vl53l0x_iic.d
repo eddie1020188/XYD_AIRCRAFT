@@ -36,3 +36,4 @@
 .\objects\vl53l0x_iic.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\vl53l0x_iic.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\vl53l0x_iic.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
+.\objects\vl53l0x_iic.o: ..\USER\INC\sys.h

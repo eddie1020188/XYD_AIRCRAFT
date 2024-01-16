@@ -43,7 +43,7 @@
 .\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: ..\USER\INC\systick.h
 .\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: ..\USER\INC\bsp_vl53l0x.h
+.\objects\main.o: ..\VL53L0X\core\inc\bsp_vl53l0x.h
 .\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_IIC.h
 .\objects\main.o: ..\VL53L0X\core\inc\vl53l0x_def.h
 .\objects\main.o: ..\VL53L0X\core\inc\vl53l0x_device.h
@@ -55,3 +55,7 @@
 .\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_platform_log.h
 .\objects\main.o: ..\VL53L0X\platform\inc\vl53l0x_i2c_platform.h
 .\objects\main.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: ..\USER\INC\usart.h
+.\objects\main.o: ..\WIFI\wifi.h
+.\objects\main.o: ..\WIFI\usart2.h
+.\objects\main.o: ..\USER\INC\key.h

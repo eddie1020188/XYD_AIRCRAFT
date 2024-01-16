@@ -1,5 +1,5 @@
-.\objects\bsp_vl53l0x.o: ..\USER\SRC\bsp_vl53l0x.c
-.\objects\bsp_vl53l0x.o: ..\USER\INC\bsp_vl53l0x.h
+.\objects\bsp_vl53l0x.o: ..\VL53L0X\core\src\bsp_vl53l0x.c
+.\objects\bsp_vl53l0x.o: ..\VL53L0X\core\inc\bsp_vl53l0x.h
 .\objects\bsp_vl53l0x.o: ..\VL53L0X\platform\inc\vl53l0x_IIC.h
 .\objects\bsp_vl53l0x.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\bsp_vl53l0x.o: ..\USER\INC\systick.h
@@ -37,6 +37,7 @@
 .\objects\bsp_vl53l0x.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\bsp_vl53l0x.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\bsp_vl53l0x.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
+.\objects\bsp_vl53l0x.o: ..\USER\INC\sys.h
 .\objects\bsp_vl53l0x.o: ..\VL53L0X\core\inc\vl53l0x_def.h
 .\objects\bsp_vl53l0x.o: ..\VL53L0X\core\inc\vl53l0x_device.h
 .\objects\bsp_vl53l0x.o: ..\VL53L0X\platform\inc\vl53l0x_types.h

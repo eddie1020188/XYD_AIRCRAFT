@@ -8,7 +8,7 @@ void VL53l0x_GPIO_Init(void)
 	GPIO_InitTypeDef GPIO_InitStruct;
 	RCC_APB2PeriphClockCmd(VL_XSHUT_RCC,ENABLE);
 	GPIO_InitStruct.GPIO_Pin = VL_XSHUT_PIN;
-	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
     GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(VL_XSHUT_IOx,&GPIO_InitStruct);	
 }

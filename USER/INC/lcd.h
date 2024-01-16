@@ -156,7 +156,7 @@ u16  LCD_ReadPoint(u16 x,u16 y); //读点
 void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2);
 void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2);		   
 void LCD_SetWindows(u16 xStar, u16 yStar,u16 xEnd,u16 yEnd);
-
+	void LCD_ClearPartial(u16 xStar, u16 yStar, u16 xEnd, u16 yEnd, u16 Color);
 u16 LCD_RD_DATA(void);//读取LCD数据									    
 void LCD_WriteReg(u8 LCD_Reg, u16 LCD_RegValue);
 void LCD_WR_DATA(u8 data);

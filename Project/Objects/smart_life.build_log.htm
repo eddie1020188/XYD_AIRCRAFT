@@ -22,50 +22,24 @@ Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
 D:\Eddie\×ÀÃæ\AIRCRAFT\Project\smart_life.uvprojx
-Project File Date:  01/15/2024
+Project File Date:  01/16/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Work_XYD\keil5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling main.c...
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(14): warning:  #47-D: incompatible redefinition of macro "GPIOA_ODR_Addr"  (declared at line 19 of "..\USER\INC\sys.h")
-  #define GPIOA_ODR_Addr    (GPIOA_BASE+12) //0x4001080C 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(15): warning:  #47-D: incompatible redefinition of macro "GPIOB_ODR_Addr"  (declared at line 20 of "..\USER\INC\sys.h")
-  #define GPIOB_ODR_Addr    (GPIOB_BASE+12) //0x40010C0C 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(16): warning:  #47-D: incompatible redefinition of macro "GPIOC_ODR_Addr"  (declared at line 21 of "..\USER\INC\sys.h")
-  #define GPIOC_ODR_Addr    (GPIOC_BASE+12) //0x4001100C 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(17): warning:  #47-D: incompatible redefinition of macro "GPIOD_ODR_Addr"  (declared at line 22 of "..\USER\INC\sys.h")
-  #define GPIOD_ODR_Addr    (GPIOD_BASE+12) //0x4001140C 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(18): warning:  #47-D: incompatible redefinition of macro "GPIOE_ODR_Addr"  (declared at line 23 of "..\USER\INC\sys.h")
-  #define GPIOE_ODR_Addr    (GPIOE_BASE+12) //0x4001180C 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(19): warning:  #47-D: incompatible redefinition of macro "GPIOF_ODR_Addr"  (declared at line 24 of "..\USER\INC\sys.h")
-  #define GPIOF_ODR_Addr    (GPIOF_BASE+12) //0x40011A0C    
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(20): warning:  #47-D: incompatible redefinition of macro "GPIOG_ODR_Addr"  (declared at line 25 of "..\USER\INC\sys.h")
-  #define GPIOG_ODR_Addr    (GPIOG_BASE+12) //0x40011E0C    
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(22): warning:  #47-D: incompatible redefinition of macro "GPIOA_IDR_Addr"  (declared at line 29 of "..\USER\INC\sys.h")
-  #define GPIOA_IDR_Addr    (GPIOA_BASE+8) //0x40010808 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(23): warning:  #47-D: incompatible redefinition of macro "GPIOB_IDR_Addr"  (declared at line 30 of "..\USER\INC\sys.h")
-  #define GPIOB_IDR_Addr    (GPIOB_BASE+8) //0x40010C08 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(24): warning:  #47-D: incompatible redefinition of macro "GPIOC_IDR_Addr"  (declared at line 31 of "..\USER\INC\sys.h")
-  #define GPIOC_IDR_Addr    (GPIOC_BASE+8) //0x40011008 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(25): warning:  #47-D: incompatible redefinition of macro "GPIOD_IDR_Addr"  (declared at line 32 of "..\USER\INC\sys.h")
-  #define GPIOD_IDR_Addr    (GPIOD_BASE+8) //0x40011408 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(26): warning:  #47-D: incompatible redefinition of macro "GPIOE_IDR_Addr"  (declared at line 33 of "..\USER\INC\sys.h")
-  #define GPIOE_IDR_Addr    (GPIOE_BASE+8) //0x40011808 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(27): warning:  #47-D: incompatible redefinition of macro "GPIOF_IDR_Addr"  (declared at line 34 of "..\USER\INC\sys.h")
-  #define GPIOF_IDR_Addr    (GPIOF_BASE+8) //0x40011A08 
-..\VL53L0X\platform\inc\vl53l0x_IIC.h(28): warning:  #47-D: incompatible redefinition of macro "GPIOG_IDR_Addr"  (declared at line 35 of "..\USER\INC\sys.h")
-  #define GPIOG_IDR_Addr    (GPIOG_BASE+8) //0x40011E08 
-..\USER\SRC\main.c(10): warning:  #177-D: variable "high"  was declared but never referenced
-    int  high;
-..\USER\SRC\main.c(11): warning:  #177-D: variable "buff"  was declared but never referenced
-  	char buff[20];
-..\USER\SRC\main.c(12): warning:  #177-D: variable "TEMP"  was declared but never referenced
-  	char TEMP[20];
-..\USER\SRC\main.c: 17 warnings, 0 errors
+compiling wifi.c...
+..\USER\INC\key.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\WIFI\wifi.c(59): warning:  #940-D: missing return statement at end of non-void function "WIFI_TCP_Init" 
+  }
+..\WIFI\wifi.c(46): warning:  #550-D: variable "RET"  was set but never used
+  	 _Bool RET = 0;
+..\WIFI\wifi.c(47): warning:  #177-D: variable "ret"  was declared but never referenced
+  	 u8 ret;
+..\WIFI\wifi.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=15904 RO-data=4588 RW-data=704 ZI-data=1424  
-".\Objects\smart_life.axf" - 0 Error(s), 17 Warning(s).
+Program Size: Code=22620 RO-data=4792 RW-data=724 ZI-data=1924  
+".\Objects\smart_life.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -79,7 +53,7 @@ Package Vendor: Keil
   D:\Work_XYD\keil5\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>

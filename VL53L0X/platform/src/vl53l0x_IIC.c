@@ -3,20 +3,16 @@
 void VL53L0X_IIC_Init(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
-	RCC_AHB1PeriphClockCmd(	VL_SDA_RCC, ENABLE );	
+	RCC_APB2PeriphClockCmd(	VL_SDA_RCC, ENABLE );	
 	GPIO_InitStructure.GPIO_Pin = VL_SDA_PIN;               //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT ;       //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;       //50Mhz速度
-	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(VL_SDA_IOx, &GPIO_InitStructure);
 
 	RCC_APB2PeriphClockCmd(	VL_SCL_RCC, ENABLE );	
 	GPIO_InitStructure.GPIO_Pin = VL_SCL_PIN;               //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT ;       //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;       //50Mhz速度
-	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(VL_SCL_IOx, &GPIO_InitStructure);
 	
 	GPIO_SetBits(VL_SDA_IOx,VL_SDA_PIN);//SDA输出高	

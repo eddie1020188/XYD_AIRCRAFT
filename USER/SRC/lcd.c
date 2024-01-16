@@ -174,7 +174,37 @@ void LCD_Clear(u16 Color)
 	}
 //	 LCD_CS_SET;
 } 
+/**************************************************************************
+函数：	void LCD_ClearPartial(u16 xStar, u16 yStar, u16 xEnd, u16 yEnd, u16 Color)
+功能：	清楚部分屏幕显示
+参数： 	
+返回值：
+备注：       
+***************************************************************************/
+	void LCD_ClearPartial(u16 xStar, u16 yStar, u16 xEnd, u16 yEnd, u16 Color)
+{
+    unsigned int i, m;
+    LCD_SetWindows(xStar, yStar, xEnd-1, yEnd-1); // 设置要清除的窗口区域
+    LCD_RS_SET;
+    // 通常情况下，控制LCD的片选信号是必要的，但是您的代码中这部分被注释掉了。
+    // 如果需要片选信号，取消以下注释。
+    // LCD_CS_CLR; 
 
+    for(i = yStar; i <= yEnd; i++)
+    {
+        for(m = xStar; m <= xEnd; m++)
+        {
+            // 发送颜色数据到LCD
+            // 高位字节
+            SPIv_WriteData(Color >> 8);
+            // 低位字节
+            SPIv_WriteData(Color);
+        }
+    }
+
+    // 如果使用片选信号，取消以下注释。
+    // LCD_CS_SET;
+}
 /*****************************************************************************
  * @name       :void LCD_Clear(u16 Color)
  * @date       :2018-08-09 
@@ -548,3 +578,9 @@ void LCD_Display_STRING( u8 xs,u8 ys,u8 size,u8 *buff,u16 color)
 		}
 
 	}
+
+	
+	
+
+
+

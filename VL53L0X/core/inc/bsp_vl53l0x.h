@@ -6,7 +6,7 @@
 #include "vl53l0x_api.h"
 #include "vl53l0x_platform.h"
 
-#define VL_XSHUT_RCC  RCC_APB2Periph_GPIOA
+#define VL_XSHUT_RCC  RCC_AHB1Periph_GPIOA
 #define VL_XSHUT_PIN  GPIO_Pin_4
 #define VL_XSHUT_IOx  GPIOA  
 

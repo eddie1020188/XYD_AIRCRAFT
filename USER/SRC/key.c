@@ -51,7 +51,7 @@ int key_scan(int mode)
 		
 		delay_ms(15);
 		
-		if(KEY1_Press){
+		while(KEY1_Press){
 		return KEY1;}
 	}
 

@@ -6,21 +6,34 @@ extern const unsigned char gImage_pyy[];
 vu16 Distance = 0;   //保存测距数据
 int main(void)
 {
+	 char buff[20];
+	_Bool FLAG;
 	LCD_Init();
-  int  high;
-	char buff[20];
-	char TEMP[20];
-	LCD_Display_STRING( 0,0,32,"AAAAAAAAAAAA",BRRED);
+	USART1_Init(115200);
+	USART2_Init(115200);
+	key_init();
   VL53L0x_Init(&VL53L0x_dev);
-	LCD_Display_STRING( 0,32,32,"BBBBBBBBBBBB",BRRED);
-//	LCD_Display_STRING( 0,0,32,(u8*)"南京信盈达",BRRED);
-	
+	LCD_Display_STRING( 0,0,32,"WIFI",BRRED);
+	LCD_Display_STRING( 0,32,32,"CONNECTING",BRRED);
+	LCD_Display_STRING( 0,64,32,"WAIT",BRRED);
+	FLAG = WIFI_TCP_Init();
 	
 	while(1){
-//	VL53L1_single_test(&VL53L0x_dev,&VL53L0x_data);
-//	sprintf(buff,"DISTANCE:%d",Distance);
-//  LCD_Display_STRING( 0,0,32,(u8*)buff,BRRED);
-	}
+
+	if(FLAG){
+		
+	  while(1){
+			VL53L1_single_test(&VL53L0x_dev,&VL53L0x_data);
+			sprintf(buff,"DISTANCE:%dMM",Distance);
+			LCD_ClearPartial(130,64,240,96, WHITE);
+			LCD_Display_STRING( 0,64,32,(u8*)buff,BRRED);
+			USART2_SendStr(buff);
+			delay_ms(1000);
+		 }
+	 }
+	 
+  }
+ 
 	          
 	
 }

@@ -2,7 +2,7 @@
 .\objects\usart.o: ..\USER\INC\usart.h
 .\objects\usart.o: ..\CMSIS\stm32f4xx.h
 .\objects\usart.o: ..\CMSIS\core_cm4.h
-.\objects\usart.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart.o: ..\CMSIS\core_cmInstr.h
 .\objects\usart.o: ..\CMSIS\core_cmFunc.h
 .\objects\usart.o: ..\CMSIS\core_cm4_simd.h
@@ -35,6 +35,4 @@
 .\objects\usart.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\usart.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\usart.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-.\objects\usart.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\usart.o: ..\USER\INC\led.h
-.\objects\usart.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\usart.o: D:\Work_XYD\keil5\ARM\ARMCC\Bin\..\include\stdio.h
